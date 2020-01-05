@@ -67,7 +67,7 @@
       font-weight: 300;
 
       &.router-link-active {
-        color: var(--maz-primary-color);
+        color: #fff;
       }
     }
   }

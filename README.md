@@ -30,12 +30,12 @@ Vue.use(VueMazelUi)
 
 // or
 import {
-  MazSelect,
+  PremoSelect,
   MazButton
   // ...
 } from 'vue-mazel-ui'
 
-Vue.component(MazSelect.name, MazSelect)
+Vue.component(PremoSelect.name, PremoSelect)
 Vue.component(MazButton.name, MazButton)
 ```
 

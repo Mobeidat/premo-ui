@@ -8,7 +8,7 @@ $mini-size: 30px;
   outline: none;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-color: $primary-color;
+  background-color: $blue-light-color;
   color: white;
   display: inline-block;
   border-radius: var(--maz-border-radius);
@@ -26,15 +26,11 @@ $mini-size: 30px;
 
   &:hover,
   &:focus {
-    background-color: darken($primary-color, 10%);
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.5);
+    background-color: darken($blue-primary-color, 10%);
   }
 
   &--rounded {
-    border-radius: 20px;
+    border-radius: 30px;
   }
 
   &--md {
@@ -76,15 +72,11 @@ a.btn {
 
       &:hover,
       &:focus {
-        background-color: darken($color, 10%);
-      }
-
-      &:focus {
-        box-shadow: 0 0 0 0.2rem rgba($color, 0.5);
+        background-color: $accent-color;
       }
 
       &--outline {
-        background-color: rgba($color, 0.05);
+        background-color: white;
         border: 1px solid $color;
         color: $color;
 
@@ -95,7 +87,7 @@ a.btn {
         }
 
         &:focus {
-          box-shadow: 0 0 0 0.2rem rgba($color, 0.5);
+          // box-shadow: 0 0 0 0.2rem rgba($color, 0.5);
         }
       }
     }

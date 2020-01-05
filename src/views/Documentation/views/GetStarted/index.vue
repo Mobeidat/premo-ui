@@ -24,24 +24,24 @@
     data () {
       return {
         codeBase: `import Vue from 'vue';
-import VueMazelUi from 'vue-mazel-ui';
+import VuePremoUi from 'vue-premo-ui';
 import App from './App.vue';
 
-Vue.use(VueMazelUi);
+Vue.use(VuePremoUi);
 
 new Vue({
   el: '#app',
   render: h => h(App)
 });`,
         codeCustom: `import Vue from 'vue';
-import { MazBtn, MazSelect } from 'element-ui';
+import { PremoBtn, PremoSelect } from 'element-ui';
 import App from './App.vue';
 
-Vue.component(MazBtn.name, MazBtn);
-Vue.component(MazSelect.name, MazSelect);
+Vue.component(PremoBtn.name, PremoBtn);
+Vue.component(PremoSelect.name, PremoSelect);
 /* ou
- * Vue.use(MazBtn)
- * Vue.use(MazSelect)
+ * Vue.use(PremoBtn)
+ * Vue.use(PremoSelect)
  */
 
 new Vue({

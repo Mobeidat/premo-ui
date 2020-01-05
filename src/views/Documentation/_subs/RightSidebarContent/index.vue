@@ -6,14 +6,14 @@
       >
         {{ currentComponent | capitalize }}
       </h3>
-      <MazBtn
+      <PremoBtn
         rounded
         outline
         size="sm"
         @click="$emit('close')"
       >
         X
-      </MazBtn>
+      </PremoBtn>
     </div>
     <div
       v-if="currentProps.length"
@@ -60,26 +60,26 @@
 
 <script>
   import {
-    MazBtn, MazInput, MazSelect, MazPhoneNumberInput, MazSwitch, MazCheckbox,
-    MazDialog, MazLoader, MazSidebar, MazSpinner, MazTransitionExpand, MazCollapse
+    PremoBtn, PremoInput, PremoSelect, PremoPhoneNumberInput, PremoSwitch, PremoCheckbox,
+    PremoDialog, PremoLoader, PremoSidebar, PremoSpinner, PremoTransitionExpand, PremoCollapse
   } from '@/lib'
 
   export default {
     name: 'RightSidebarContent',
     components: {
       /* eslint-disable vue/no-unused-components */
-      MazBtn,
-      MazInput,
-      MazPhoneNumberInput,
-      MazSelect,
-      MazSwitch,
-      MazCheckbox,
-      MazDialog,
-      MazLoader,
-      MazSidebar,
-      MazSpinner,
-      MazTransitionExpand,
-      MazCollapse
+      PremoBtn,
+      PremoInput,
+      PremoPhoneNumberInput,
+      PremoSelect,
+      PremoSwitch,
+      PremoCheckbox,
+      PremoDialog,
+      PremoLoader,
+      PremoSidebar,
+      PremoSpinner,
+      PremoTransitionExpand,
+      PremoCollapse
       /* eslint-enable */
     },
     computed: {

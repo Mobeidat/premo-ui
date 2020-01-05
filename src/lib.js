@@ -1,16 +1,14 @@
-import MazBtn from '@/../packages/MazBtn'
-import MazCheckbox from '@/../packages/MazCheckbox'
-import MazCollapse from '@/../packages/MazCollapse'
-import MazDialog from '@/../packages/MazDialog'
-import MazFlex from '@/../packages/MazFlex'
-import MazInput from '@/../packages/MazInput'
-import MazLoader from '@/../packages/MazLoader'
-import MazPhoneNumberInput from '@/../packages/MazPhoneNumberInput'
-import MazSelect from '@/../packages/MazSelect'
-import MazSidebar from '@/../packages/MazSidebar'
-import MazSpinner from '@/../packages/MazSpinner'
-import MazSwitch from '@/../packages/MazSwitch'
-import MazTransitionExpand from '@/../packages/MazTransitionExpand'
+import PremoBtn from '@/../packages/PremoBtn'
+import PremoCheckbox from '@/../packages/PremoCheckbox'
+import PremoCollapse from '@/../packages/PremoCollapse'
+import PremoDialog from '@/../packages/PremoDialog'
+import PremoInput from '@/../packages/PremoInput'
+import PremoLoader from '@/../packages/PremoLoader'
+import PremoPhoneNumberInput from '@/../packages/PremoPhoneNumberInput'
+import PremoSelect from '@/../packages/PremoSelect'
+import PremoSidebar from '@/../packages/PremoSidebar'
+import PremoSpinner from '@/../packages/PremoSpinner'
+import PremoSwitch from '@/../packages/PremoSwitch'
 
 import { version } from '@/../package.json'
 import './theme'
@@ -22,19 +20,17 @@ if (process.env.NODE_ENV === 'development' && process.env.VUE_APP_MAZ === 'devel
 }
 
 const components = [
-  MazBtn,
-  MazCheckbox,
-  MazCollapse,
-  MazDialog,
-  MazFlex,
-  MazInput,
-  MazLoader,
-  MazPhoneNumberInput,
-  MazSelect,
-  MazSwitch,
-  MazSidebar,
-  MazSpinner,
-  MazTransitionExpand
+  PremoBtn,
+  PremoCheckbox,
+  PremoCollapse,
+  PremoDialog,
+  PremoInput,
+  PremoLoader,
+  PremoPhoneNumberInput,
+  PremoSelect,
+  PremoSwitch,
+  PremoSidebar,
+  PremoSpinner
 ]
 // eslint-disable-next-line
 const install = (Vue, opts = {}) => {
@@ -49,19 +45,17 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
   version,
-  MazBtn,
-  MazCheckbox,
-  MazCollapse,
-  MazDialog,
-  MazFlex,
-  MazInput,
-  MazLoader,
-  MazPhoneNumberInput,
-  MazSelect,
-  MazSwitch,
-  MazSidebar,
-  MazSpinner,
-  MazTransitionExpand
+  PremoBtn,
+  PremoCheckbox,
+  PremoCollapse,
+  PremoDialog,
+  PremoInput,
+  PremoLoader,
+  PremoPhoneNumberInput,
+  PremoSelect,
+  PremoSwitch,
+  PremoSidebar,
+  PremoSpinner
 }
 
 export default {

@@ -17,42 +17,19 @@
           Documentation
         </RouterLink>
       </div>
-      <div class="nav-footer-content__logo hidden-tablet">
-        <img
-          src="@/assets/img/logo.png"
-          alt="logo-loic-mazuel"
-          class="nav-footer-content__logo__img"
-        >
-      </div>
       <div class="flex align-center">
-        <SocialButtons class="mr-2" />
         <VersionNumber />
       </div>
     </nav>
-    <div class="nav-footer-subs py-2">
-      <div class="container flex align-end">
-        <a
-          href="https://www.loicmazuel.com/"
-          target="_blank"
-          class="flex align-center"
-        >
-          <p class="fs-14">
-            © Loïc Mazuel | Website made with VueJS
-          </p>
-        </a>
-      </div>
-    </div>
   </footer>
 </template>
 
 <script>
-  import SocialButtons from '@/components/SocialButtons'
   import VersionNumber from '@/components/VersionNumber'
 
   export default {
     name: 'NavFooter',
     components: {
-      SocialButtons,
       VersionNumber
     }
   }

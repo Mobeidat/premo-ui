@@ -12,7 +12,7 @@
       v-if="code"
       class="component-container__footer"
     >
-      <MazCollapse
+      <PremoCollapse
         class="component-container__footer__collapse"
         :dark="dark || hasDarkTheme"
       >
@@ -28,7 +28,7 @@
             :code="code"
           />
         </div>
-      </MazCollapse>
+      </PremoCollapse>
     </div>
   </div>
 </template>

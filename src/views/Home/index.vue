@@ -1,20 +1,13 @@
 <template>
   <div class="home flex-1 flex direction-column">
     <div class="container flex-1 flex direction-column align-center justify-center py-4">
-      <img
-        class="home__logo"
-        src="@/assets/img/logo.png"
-        alt="vue mazel ui logo"
-      >
+      <h1>PremoUi</h1>
       <h2 class="my-3 text-center">
-        A components & CSS library to build your interface
+        A UI components library for premogiftcards.com
       </h2>
-      <p class="mb-3 text-center">
-        A beautiful design system
-      </p>
       <CodeContainer
         language="bash"
-        code="npm i vue-mazel-ui -S"
+        code="npm i vue-premo-ui -S"
         class="mb-3"
       />
       <div class="flex align-start flex--wrap mt-3 align-center justify-center">
@@ -32,7 +25,7 @@
         </router-link>
         <router-link
           class="btn btn--primary--outline"
-          :to="{ name: 'MazBtnDoc' }"
+          :to="{ name: 'PremoBtnDoc' }"
         >
           Components
         </router-link>
@@ -40,14 +33,14 @@
       <div class="flex align-start flex--wrap mt-3 align-center justify-center">
         <a
           class="btn btn--dark--outline mr-4"
-          href="https://github.com/LouisMazel/vue-mazel-ui"
+          href="http://10.121.61.8:8999/malobaidat/vue-premo-ui"
           target="_blank"
         >
-          Github
+          GitLab
         </a>
         <a
           class="btn btn--danger--outline"
-          href="https://www.npmjs.com/package/vue-mazel-ui"
+          href="https://www.npmjs.com/package/vue-premo-ui"
           target="_blank"
         >
           NPM

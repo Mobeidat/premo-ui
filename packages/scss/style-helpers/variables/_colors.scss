@@ -1,7 +1,22 @@
-$primary-color:   dodgerblue !default;
+// Primary Blue Colours
+$primary-color: #444954 !default;
+$blue-primary-color: #006FBD !default;
+$blue-light-color:#0099D7 !default;
+
+// secondary Grey Colour
+$secondary-color-1: #61666F !default;
+$secondary-color-2: #7C8088 !default;
+$secondary-color-3: #A1A4A9 !default;
+$secondary-color-4: #D0D1D4 !default;
+$secondary-color-5: #ECECEE !default;
+
+$accent-color:    #00BEEF !default;
+$success-color:   #72E0B3 !default;
+$error-color:     #FF8876 !default;
+$disabled-color:  #C6C6C6 !default;
+
 $secondary-color: #21222E !default;
 $danger-color:    orangered !default;
-$success-color:   yellowgreen !default;
 $info-color:      #17A2B8 !default;
 $warning-color:   #FFA300 !default;
 $light-color:     #F5F5F5 !default;

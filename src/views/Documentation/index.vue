@@ -1,13 +1,13 @@
 <template>
   <div class="documentation flex flex-1 pos-r">
-    <MazSidebar
+    <PremoSidebar
       v-model="hasLeftSidebarOpen"
       :width="250"
       :dark="hasDarkTheme"
       :absolute="isAbsolute"
     >
       <LeftSidebarContent />
-    </MazSidebar>
+    </PremoSidebar>
     <div class="documentation__container flex direction-column flex-1">
       <div
         v-if="$route.name !== 'Install' && $route.name !== 'GetStarted'"
@@ -16,16 +16,16 @@
         <h2>
           {{ currentComponent | capitalize }}
         </h2>
-        <MazBtn
+        <PremoBtn
           @click="showOptions"
         >
           Show options
-        </MazBtn>
+        </PremoBtn>
       </div>
       <router-view class="px-5 py-3 flex-1" />
       <NavFooter />
     </div>
-    <MazSidebar
+    <PremoSidebar
       v-if="$route.name !== 'Install' && $route.name !== 'GetStarted'"
       v-model="hasRightSidebarOpen"
       :width="500"
@@ -35,7 +35,7 @@
       :dark="hasDarkTheme"
     >
       <RightSidebarContent @close="hasRightSidebarOpen = !hasRightSidebarOpen" />
-    </MazSidebar>
+    </PremoSidebar>
   </div>
 </template>
 
