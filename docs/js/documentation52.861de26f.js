@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["documentation52"],{cbc1:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"maz-spinner-doc flex flex--wrap"},[t("div",{staticClass:"flex-1 mr-4"},[t("ComponentContainer",{staticClass:"text-center"},[t("PremoSpinner")],1)],1)])},s=[],c={name:"PremoSpinnerDoc"},r=c,i=t("2877"),o=Object(i["a"])(r,a,s,!1,null,null,null);n["default"]=o.exports}}]);
+//# sourceMappingURL=documentation52.861de26f.js.map

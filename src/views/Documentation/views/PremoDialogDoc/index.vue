@@ -16,7 +16,6 @@
           </div>
           Dialog Content Basic
         </PremoDialog>
-
       </div>
     </ComponentContainer>
   </div>

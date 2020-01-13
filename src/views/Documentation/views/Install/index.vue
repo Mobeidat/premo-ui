@@ -16,7 +16,6 @@
       language="bash"
       class="my-4"
     />
-
   </div>
 </template>
 
