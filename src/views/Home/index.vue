@@ -30,22 +30,6 @@
           Components
         </router-link>
       </div>
-      <div class="flex align-start flex--wrap mt-3 align-center justify-center">
-        <a
-          class="btn btn--dark--outline mr-4"
-          href="http://10.121.61.8:8999/malobaidat/vue-premo-ui"
-          target="_blank"
-        >
-          GitLab
-        </a>
-        <a
-          class="btn btn--danger--outline"
-          href="https://www.npmjs.com/package/vue-premo-ui"
-          target="_blank"
-        >
-          NPM
-        </a>
-      </div>
     </div>
     <NavFooter />
   </div>
