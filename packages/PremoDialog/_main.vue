@@ -36,7 +36,7 @@
                 @click="$emit('input', false)"
               >
                 <i class="material-icons">
-                  X
+                  close
                 </i>
               </div>
             </transition>
@@ -50,7 +50,25 @@
             v-if="!hideFooter"
             class="maz-dialog__footer flex align-end p-3"
           >
-            <slot name="footer"></slot>
+            <slot name="footer">
+              <PremoBtn
+                type="default"
+                outline
+                size="md"
+                @click="$emit('input', false)"
+              >
+                Close
+              </PremoBtn>
+              <PremoBtn
+                v-if="!noValidation"
+                class="ml-3"
+                type="primary"
+                size="md"
+                @click="$emit('validate')"
+              >
+                Confirm
+              </PremoBtn>
+            </slot>
           </div>
         </div>
       </div>
