@@ -17,7 +17,7 @@ import {
   PremoSelect,
   PremoButton
   // ...
-} from 'vue-mazel-ui'
+} from 'vue-premo-ui'
 
 Vue.component(PremoSelect.name, PremoSelect)
 Vue.component(PremoButton.name, PremoButton)
