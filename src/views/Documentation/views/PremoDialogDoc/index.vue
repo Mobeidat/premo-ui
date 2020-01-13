@@ -16,37 +16,7 @@
           </div>
           Dialog Content Basic
         </PremoDialog>
-        <PremoBtn
-          type="success"
-          class="mr-2"
-          @click="hasDialogOpenSuccess = true"
-        >
-          Open Success Dialog
-        </PremoBtn>
-        <PremoDialog
-          v-model="hasDialogOpenSuccess"
-          success
-        >
-          <div slot="title">
-            Success Dialog
-          </div>
-          Dialog Content Success
-        </PremoDialog>
-        <PremoBtn
-          type="danger"
-          @click="hasDialogOpenDanger = true"
-        >
-          Open Danger Dialog
-        </PremoBtn>
-        <PremoDialog
-          v-model="hasDialogOpenDanger"
-          danger
-        >
-          <div slot="title">
-            Danger Dialog
-          </div>
-          Dialog Content Danger
-        </PremoDialog>
+
       </div>
     </ComponentContainer>
   </div>

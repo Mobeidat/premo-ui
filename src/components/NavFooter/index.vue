@@ -18,7 +18,7 @@
         </RouterLink>
       </div>
       <div class="flex align-center">
-        <VersionNumber />
+        <VersionNumber style="display:none;" />
       </div>
     </nav>
   </footer>

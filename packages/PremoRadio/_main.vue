@@ -1,11 +1,11 @@
 <template>
   <div
-    class="maz-checkbox flex align-center"
+    class="maz-radio flex align-center"
   >
     <input
       :id="uniqueId"
       :checked="value"
-      type="checkbox"
+      type="radio"
       class="mr-2"
       @change="$emit('input', $event.target.checked)"
     >
@@ -22,29 +22,29 @@
   import uniqueId from './../mixins/uniqueId'
 
   export default {
-    name: 'PremoCheckbox',
+    name: 'PremoRadio',
     mixins: [uniqueId],
     props: {
-      id: { type: String, default: 'PremoCheckbox' },
+      id: { type: String, default: 'PremoRadio' },
       value: { default: false, type: Boolean }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  .maz-checkbox {
+  .maz-radio {
     padding: 2px 8px;
     transition: all 0.2s;
     cursor: pointer;
 
-    [type='checkbox']:not(:checked),
-    [type='checkbox']:checked {
+    [type='radio']:not(:checked),
+    [type='radio']:checked {
       position: absolute;
       left: -9999px;
     }
 
-    [type='checkbox']:not(:checked) + label,
-    [type='checkbox']:checked + label {
+    [type='radio']:not(:checked) + label,
+    [type='radio']:checked + label {
       position: relative;
       padding-left: 25px;
       cursor: pointer;
@@ -52,46 +52,46 @@
       user-select: none;
     }
 
-    [type='checkbox']:not(:checked) + label::before,
-    [type='checkbox']:checked + label::before {
+    [type='radio']:not(:checked) + label::before,
+    [type='radio']:checked + label::before {
       content: '';
       position: absolute;
       left: 0;
       top: 4px;
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       border: 1px solid var(--maz-second-color);
       background: transparent;
-      border-radius: 4px;
+      border-radius: 30px;
       transition: all 0.2s;
     }
 
-    [type='checkbox']:not(:checked) + label::before {
+    [type='radio']:not(:checked) + label::before {
       border: 1px solid var(--maz-second-color);
       transition: all 0.2s;
     }
 
-    [type='checkbox']:not(:checked) + label::after,
-    [type='checkbox']:checked + label::after {
+    [type='radio']:not(:checked) + label::after,
+    [type='radio']:checked + label::after {
       content: ' ';
       position: absolute;
       top: 7px;
       left: 3px;
       font-size: 14px;
-      width: 9px;
-      height: 9px;
+      width: 8px;
+      height: 8px;
       background-color: var(--maz-second-color);
       transition: all 0.2s;
-      border-radius: 2px;
+      border-radius: 30px;
     }
 
-    [type='checkbox']:not(:checked) + label::after {
+    [type='radio']:not(:checked) + label::after {
       opacity: 0;
       transform: scale(0);
       color: var(--maz-second-color);
     }
 
-    [type='checkbox']:checked + label::after {
+    [type='radio']:checked + label::after {
       opacity: 1;
       transform: scale(1);
       color: var(--maz-second-color);

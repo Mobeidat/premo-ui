@@ -60,7 +60,7 @@
 
 <script>
   import {
-    PremoBtn, PremoInput, PremoSelect, PremoPhoneNumberInput, PremoSwitch, PremoCheckbox,
+    PremoBtn, PremoInput, PremoSelect, PremoPhoneNumberInput, PremoSwitch, PremoCheckbox, PremoRadio,
     PremoDialog, PremoLoader, PremoSidebar, PremoSpinner, PremoTransitionExpand, PremoCollapse
   } from '@/lib'
 
@@ -74,6 +74,7 @@
       PremoSelect,
       PremoSwitch,
       PremoCheckbox,
+      PremoRadio,
       PremoDialog,
       PremoLoader,
       PremoSidebar,

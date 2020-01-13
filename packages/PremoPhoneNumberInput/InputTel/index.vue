@@ -347,7 +347,6 @@
       .input-tel {
         &__input {
           border-color: $primary-color;
-          box-shadow: 0 0 0 0.2rem $primary-color-transparency;
         }
 
         &__label {
@@ -356,15 +355,12 @@
       }
 
       &.has-error {
-        .input-tel__input {
-          box-shadow: 0 0 0 0.2rem $error-color-transparency;
-        }
+        .input-tel__input {}
       }
 
       &.is-valid {
         .input-tel__input {
           border-color: $valid-color;
-          box-shadow: 0 0 0 0.2rem $valid-color-transparency;
         }
       }
     }

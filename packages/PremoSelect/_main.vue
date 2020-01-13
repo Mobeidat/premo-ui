@@ -468,7 +468,6 @@
 
       .maz-select__input {
         border-color: $primary-color;
-        box-shadow: 0 0 0 0.2rem $primary-color-transparency;
       }
 
       .maz-select__label {
@@ -483,9 +482,7 @@
       }
 
       &.is-focused {
-        .maz-select__input {
-          box-shadow: 0 0 0 0.2rem $error-color-transparency;
-        }
+        .maz-select__input {}
       }
 
       .maz-select__label {

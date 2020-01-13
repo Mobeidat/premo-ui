@@ -16,26 +16,6 @@
         </PremoCollapse>
       </ComponentContainer>
     </div>
-    <div class="flex-1">
-      <ComponentContainer
-        dark
-        :code="codeDark"
-      >
-        <PremoCollapse
-          dark
-          open
-        >
-          <div slot="header-text">
-            Toggle collapse
-          </div>
-          <div class="p-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
-        </PremoCollapse>
-      </ComponentContainer>
-    </div>
   </div>
 </template>
 

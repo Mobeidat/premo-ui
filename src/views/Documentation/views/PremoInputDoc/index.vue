@@ -15,7 +15,6 @@
     >
       <div class="flex-component flex-1">
         <h3>{{ type | capitalize }}</h3>
-        <h4>Light mode</h4>
         <ComponentContainer>
           <PremoInput
             v-model="inputValue"
@@ -56,7 +55,7 @@
         withValue: 'The value entered',
         disabledValue: '',
         inputTypes: [
-          'basic', 'error', 'valid', 'disabled', 'hint', 'clearable', 'sm', 'lg', 'required', 'loader'
+          'basic', 'error', 'disabled', 'clearable', 'required'
         ],
         exampleValue: '',
         codeExample: `<template>

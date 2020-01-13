@@ -55,7 +55,7 @@
           v-for="size in btnSizes"
           :key="`loader-${size}`"
           :size="size"
-          Primary
+          primary
         >
           Primary {{ size }}
         </PremoBtn>

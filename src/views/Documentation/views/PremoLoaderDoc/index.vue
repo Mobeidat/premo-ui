@@ -3,15 +3,6 @@
     <ComponentContainer :code="code">
       <PremoLoader />
     </ComponentContainer>
-    <ComponentContainer
-      dark
-      :code="code2"
-    >
-      <PremoLoader dark />
-    </ComponentContainer>
-    <ComponentContainer dark>
-      <PremoLoader />
-    </ComponentContainer>
   </div>
 </template>
 

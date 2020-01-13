@@ -6,7 +6,7 @@ export default ({ color, lightColor, darkColor, validColor, borderRadius, errorC
     '--maz-text-color': 'black',
     '--maz-text-color-dark': '#F2F2F2',
     '--maz-primary-color': color,
-    '--maz-second-color': '#747474',
+    '--maz-second-color': '#444A55',
     '--maz-second-color-dark': 'rgba(255, 255, 255, 0.7)',
     '--maz-third-color': '#CCC',
     '--maz-third-color-dark': 'rgba(255, 255, 255, 0.7)',

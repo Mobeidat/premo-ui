@@ -28,48 +28,6 @@
             error
           />
         </ComponentContainer>
-        <p>
-          Valid
-        </p>
-        <ComponentContainer>
-          <PremoSelect
-            v-model="selectValue"
-            :options="options"
-            valid
-          />
-        </ComponentContainer>
-      </div>
-      <div class="flex-1">
-        <h3>Dark</h3>
-        <ComponentContainer dark>
-          <PremoSelect
-            v-model="selectValue"
-            :options="options"
-            dark
-          />
-        </ComponentContainer>
-        <p>
-          Error
-        </p>
-        <ComponentContainer dark>
-          <PremoSelect
-            v-model="selectValue"
-            :options="options"
-            dark
-            error
-          />
-        </ComponentContainer>
-        <p>
-          Valid
-        </p>
-        <ComponentContainer dark>
-          <PremoSelect
-            v-model="selectValue"
-            :options="options"
-            dark
-            valid
-          />
-        </ComponentContainer>
       </div>
     </div>
   </div>

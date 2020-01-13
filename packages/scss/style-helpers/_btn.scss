@@ -72,7 +72,7 @@ a.btn {
 
       &:hover,
       &:focus {
-        background-color: $accent-color;
+        background-color: $secondary-color-5;
       }
 
       &--outline {
@@ -91,6 +91,14 @@ a.btn {
         }
       }
     }
+  }
+}
+
+.btn--blue-light {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-color: $accent-color;
   }
 }
 

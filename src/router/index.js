@@ -5,8 +5,8 @@ import { pascalCaseToKebabCase } from '@/utils'
 Vue.use(Router)
 
 const componentsRoutes = [
-  'Install', 'GetStarted', 'PremoBtnDoc', 'PremoInputDoc', 'PremoSelectDoc', 'PremoPhoneNumberInputDoc', 'PremoSwitchDoc', 'PremoCheckboxDoc', 'PremoSidebarDoc',
-  'PremoLoaderDoc', 'PremoSpinnerDoc', 'PremoCollapseDoc', 'PremoTransitionExpandDoc', 'PremoDialogDoc', 'PremoFlexDoc'
+  'Install', 'GetStarted', 'PremoBtnDoc', 'PremoInputDoc', 'PremoSelectDoc', 'PremoPhoneNumberInputDoc', 'PremoSwitchDoc', 'PremoCheckboxDoc', 'PremoRadioDoc',
+  'PremoLoaderDoc', 'PremoSpinnerDoc', 'PremoCollapseDoc', 'PremoDialogDoc'
 ]
 
 const componentsRoutesBuild = componentsRoutes.map((route) => {

@@ -7,17 +7,6 @@
         <PremoSpinner />
       </ComponentContainer>
     </div>
-    <div class="flex-1">
-      <ComponentContainer
-        dark
-        class="text-center"
-      >
-        <PremoSpinner
-          :size="60"
-          dark
-        />
-      </ComponentContainer>
-    </div>
   </div>
 </template>
 

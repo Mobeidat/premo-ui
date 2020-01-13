@@ -175,8 +175,8 @@
     position: relative;
 
     &:not(.maz-input__input.textarea) {
-      height: 40px;
-      min-height: 40px;
+      height: 45px;
+      min-height: 45px;
     }
 
     &__label {
@@ -188,7 +188,7 @@
       opacity: 0;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
       font-size: 11px;
-      color: $second-color;
+      color: $second-color-2;
     }
 
     &__input {
@@ -223,35 +223,34 @@
       }
 
       &::-webkit-input-placeholder {
-        color: $second-color;
+        color: #565D61;
       }
 
       &::-moz-placeholder {
-        color: $second-color;
+        color: #565D61;
       }
 
       &:-ms-input-placeholder {
-        color: $second-color;
+        color: #565D61;
       }
 
       &::-ms-input-placeholder {
-        color: $second-color;
+        color: #565D61;
       }
 
       &:-moz-placeholder {
-        color: $second-color;
+        color: #565D61;
       }
 
       &::placeholder {
-        color: $second-color;
+        color: #565D61;
       }
 
       &__input:-webkit-autofill,
       &__input:-webkit-autofill:hover,
       &__input:-webkit-autofill:focus,
       &__input:-webkit-autofill:active {
-        box-shadow: 0 0 0 1000px $bg-color inset !important;
-        -webkit-text-fill-color: $second-color !important;
+
       }
     }
 
@@ -280,20 +279,9 @@
       & > span:not(.maz-input__clear__effect) {
         position: relative;
         top: 1px;
-      }
-
-      &__effect {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: $clear-size;
-        height: $clear-size;
-        background-color: $muted-color;
-        border-radius: $clear-size;
-        transform: scale(0);
-        transition: transform 200ms;
+        right:5px;
+        font-size: 20px;
+        color: #D1D2D5;
       }
 
       &:hover {
@@ -349,8 +337,7 @@
           &__input:-webkit-autofill:hover,
           &__input:-webkit-autofill:focus,
           &__input:-webkit-autofill:active {
-            box-shadow: 0 0 0 1000px $bg-color-dark inset !important;
-            -webkit-text-fill-color: $second-color-dark !important;
+
           }
         }
 
@@ -372,17 +359,10 @@
       .maz-input {
         &__input {
           border-color: $primary-color;
-          box-shadow: 0 0 0 0.2rem $primary-color-transparency;
         }
 
         &__label {
-          color: $primary-color;
-        }
-      }
-
-      &.has-error {
-        .maz-input__input {
-          box-shadow: 0 0 0 0.2rem $error-color-transparency;
+          color: $second-color-2
         }
       }
 
@@ -393,8 +373,35 @@
         }
       }
     }
+    &.has-error {
+      .maz-input__input {
+        &::-webkit-input-placeholder {
+          color: $error-color;
+        }
 
-    &.has-value {
+        &::-moz-placeholder {
+          color: $error-color;
+        }
+
+        &:-ms-input-placeholder {
+          color: $error-color;
+        }
+
+        &::-ms-input-placeholder {
+          color: $error-color;
+        }
+
+        &:-moz-placeholder {
+          color: $error-color;
+        }
+
+        &::placeholder {
+          color: $error-color;
+        }
+      }
+    }
+
+    &.is-focused {
       .maz-input__label {
         opacity: 1;
         transform: translateY(0);
@@ -403,7 +410,9 @@
 
       .maz-input__input {
         padding-top: 14px;
-
+        &::placeholder {
+          color: transparent;
+        }
         &.textarea {
           padding-top: 20px;
         }
@@ -420,7 +429,7 @@
 
       .maz-input__input {
         padding-top: 14px;
-
+        color: $primary-black-color;
         &.textarea {
           padding-top: 20px;
         }
@@ -453,32 +462,32 @@
       cursor: not-allowed;
 
       .maz-input__input {
-        border-color: #CCC;
-        background-color: #F2F2F2;
-        color: $disabled-color;
+        background-color: #FFFFFF;
+        border: 1px solid #E7E8E9;
+        color: #E7E8E9;
 
         &::-webkit-input-placeholder {
-          color: $disabled-color;
+          color: #E7E8E9;
         }
 
         &::-moz-placeholder {
-          color: $disabled-color;
+          color: #E7E8E9;
         }
 
         &:-ms-input-placeholder {
-          color: $disabled-color;
+          color: #E7E8E9;
         }
 
         &::-ms-input-placeholder {
-          color: $disabled-color;
+          color: #E7E8E9;
         }
 
         &:-moz-placeholder {
-          color: $disabled-color;
+          color: #E7E8E9;
         }
 
         &::placeholder {
-          color: $disabled-color;
+          color: #E7E8E9;
         }
       }
 
@@ -486,7 +495,7 @@
       .maz-input__input,
       .maz-input__toggle__arrow {
         cursor: not-allowed;
-        color: $disabled-color;
+        color: #E7E8E9;
       }
     }
 
@@ -601,5 +610,8 @@
         left: 100%;
       }
     }
+  }
+  input:focus::-webkit-input-placeholder {
+    opacity: 0;
   }
 </style>
